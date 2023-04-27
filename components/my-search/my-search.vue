@@ -6,7 +6,6 @@
 	   </view>
 	  </view>
 </template>
-
 <script>
 	export default {
 		name:"my-search",
@@ -21,7 +20,6 @@
 				  // 圆角尺寸
 				  radius: {
 				    type: Number,
-				    // 单位是 px
 				    default: 18
 				  }
 				}
@@ -29,7 +27,6 @@
 		},
 		onLoad() {
 			const sysInfo = uni.getSystemInfoSync()
-			
 		},
 		methods:{
 			searchBoxHandler(){

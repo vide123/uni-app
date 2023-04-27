@@ -32,9 +32,7 @@
 				  </view>
 			</view>
 		</view>
-	
 		</view>
-
 </view>
 	</view>
 </template>
@@ -67,7 +65,6 @@
 			const {data: res } = await uni.$http.get('/api/public/v1/home/catitems')
 			if (res.meta.status !== 200) return uni.$showMsg()
 			this.navList = res.message
-			
 		     },
 		     async getFloorList(){
 		     	const {data:res} = await uni.$http.get('/api/public/v1/home/floordata')
